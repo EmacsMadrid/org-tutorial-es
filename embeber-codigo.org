@@ -1,0 +1,28 @@
+* Embeber y ejecutar trozos de código
+
+Los trozos de código comienzan con una etiqueta BEGIN_SRC. Opcionalmente se les
+puede dar un nombre con la etiqueta NAME.
+
+#+NAME: a Python function
+#+BEGIN_SRC python
+  def greeter(name):
+      print("Hello {}".format(name))
+  
+  greeter("Alejandro")
+#+END_SRC
+
+#+NAME: an Emacs Lisp expression
+#+BEGIN_SRC emacs-lisp
+(+ 40 2)
+#+END_SRC
+
+** Key bindings
+
+C-c '
+    Abre el trozo de código actual en un buffer con el modo correspondiente
+
+C-c C-c
+    Evalúa el contenido del trozo de código mostrando el resultado a continuación
+
+C-c C-o
+    Evalúa el contenido del trozo de código mostrando el resultado en nuevo buffer
