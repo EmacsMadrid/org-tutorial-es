@@ -27,6 +27,12 @@ Antes que nada, carga los lenguajes que usaras en tus trozos de código:
   ))
 #+END_SRC
 
+Cada vez que intentas evaluar un trozo de código, org te preguntará si estás seguro de querer hacerlo. De todos modos es fácilmente desactivable:
+
+#+BEGIN_SRC elisp
+(setq org-confirm-babel-evaluate nil)
+#+END_SRC
+
 ~C-c C-c~
     Evalúa el contenido del trozo de código mostrando el resultado a continuación
 
