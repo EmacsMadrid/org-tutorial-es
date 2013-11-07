@@ -10,7 +10,8 @@ Para resaltar los trozos de código según la sintaxis del lenguaje añade esto 
 (setq org-src-fontify-natively t)
 #+END_SRC
 
-~C-c '~
+~=C-c '=~
+
     Abre el trozo de código actual en un buffer con el modo correspondiente
 
 ** Evaluación de código
